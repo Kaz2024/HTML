@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cat</title>
+    <link rel="stylesheet" href="index.css"/>
+</head>
+<body>
+    <header>
+        <nav> 
+           <a href="index.html"> Home </a>
+           <a href="cat.html"> Cat </a>
+        </nav>
+    </header>
+<main>
+    <h1>Cat Photos</h1>
+    <section>
+      <h2>Cat Photos</h2>
+      <p>See more cat photos in my gallery.</p>
+      <img src="/Users/katheyzhang/Desktop/Coding /image /pebble_cat.jpg" alt="A cute black&white cat lying on a chair."width="200" height="200">
+    </section>
+    <section>
+        <div class="image-container">
+            <img src="image /IMG_1104.JPG" alt="Image of the black&white cat standing on the tabletop,looking gulity" width="200" height="200">
+            <img src="image /IMG_7384.JPG" alt="Image of two cats" width="200" height="400">
+            <img src="image /IMG_3508.PNG" alt="Image of cat with blue eyes" width="200" height="200">
+            <!-- Add as many images as you like -->
+        </div>
+    </section>
+    <section>
+      <h2>Cat Lists</h2>
+      <h3>Things cats love:</h3>
+      <ul>
+        <li>Cat nip</li>
+        <li>Laser pointers</li>
+        <li>Lasagna</li>
+      </ul>
+      <figure>
+        <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg" alt="A slice of lasagna on a plate.">
+        <figcaption>Cats <em>love</em> lasagna (especially Garfield!).</figcaption>  
+      </figure>
+      <h3>Top 3 things cats hate:</h3>
+      <ol>
+        <li>Flea treatment</li>
+        <li>Thunder</li>
+        <li>Other cats</li>
+      </ol>
+      <figure>
+        <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg" alt="Five cats looking around a field.">
+        <figcaption>Cats <strong>hate</strong> other cats.</figcaption>  
+      </figure>
+    </section>
+    <section>
+      <h2>Cat Form</h2>
+      <form action="https://freecatphotoapp.com/submit-cat-photo">
+        <fieldset>
+            <legend>What is the color of your cat?</legend>
+            <label for="exampleDropdown">Choose an colour:</label>
+<select id="exampleDropdown" name="exampleDropdown">
+    <option value="option1">White</option>
+    <option value="option2">Brown</option>
+    <option value="option3">Black</option>
+    <option value="option4">Grey</option>
+    <option value="option5">Other</option>
+    <!-- Add as many options as needed -->
+</select>
+        </fieldset>
+        <fieldset>
+          <legend>Is your cat an indoor or outdoor cat?</legend>
+          <label><input id="indoor" type="radio" name="indoor-outdoor" value="indoor" checked> Indoor</label>
+          <label><input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor"> Outdoor</label>
+        </fieldset>
+        <fieldset>
+          <legend>What's your cat's personality?</legend>
+          <input id="loving" type="checkbox" name="personality" value="loving" checked> <label for="loving">Loving</label>
+          <input id="lazy" type="checkbox" name="personality" value="lazy"> <label for="lazy">Lazy</label>
+          <input id="energetic" type="checkbox" name="personality" value="energetic"> <label for="energetic">Energetic</label>
+        </fieldset>
+        <input type="text" name="catphotourl" placeholder="cat photo URL" required>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+    <footer>
+        <p>&copy; Copyright KaZ 2024. All rights reserved.  </p>
+    </footer>
+</main>
+
+</body>
+
+</html>
